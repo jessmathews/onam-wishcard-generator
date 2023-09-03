@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.templates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.templates img {
+    width: 100px;
+    height: 100px;
+    max-width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.img-label {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #0a0a23;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5px;
+    border-bottom: 4px solid #fdb347;
+    margin: 0;
+    font-size: larger;
+}
+
+button[type="submit"] {
+    display: block;
+    padding: 0.75rem;
+    background: #37af65;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+    margin: 1.1px auto 0 auto;
+}
+
+button[type="submit"]:hover {
+    display: block;
+    padding: 0.75rem;
+    background: #37af65;
+    color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    scale: 1.01;
+    text-transform: uppercase;
+    border: none;
+    margin: 1.1px auto 0 auto;
+
+}
+
+form {
+    padding: 2.5rem;
+
+}
+
+.form-container {
+    max-width: 720px;
+    margin: 1.1px auto 0 auto;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.form-grouping {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.form-properties {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+}
+
+
+.created-image {
+    height: 324px !important;
+    width: auto !important;
+}
+
+.download-btn {
+    border: 2px solid black;
+    color: white;
+    background-color: #1b1b32;
+    border-radius: 3px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
