@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
 * {
     box-sizing: border-box;
     font-family: Poppins;
@@ -104,4 +105,26 @@ p {
     background-color: #fff;
     border-radius: 0.25rem;
     border: 1px solid #ced4da;
+}
+
+
+.created-image {
+    height: 324px !important;
+    width: auto !important;
+}
+
+.download-btn {
+    border: 2px solid black;
+    color: white;
+    background-color: #1b1b32;
+    border-radius: 3px;
+    width: 120px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.share-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

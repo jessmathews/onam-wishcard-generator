@@ -10,7 +10,7 @@ def generate_wish_card_image(image,sender,receiver):
         draw = ImageDraw.Draw(image)
         position = (120,360) 
         draw.text(position,"Regards, "+sender,font=font,fill=font_color)
-        image.save(f"generated_cards/output_image_{sender.lower()}.png")
+        image.save(f"static/generated_cards/card_{sender.lower()}.png")
         return True
 
     elif (image == "onam_2"):
@@ -21,7 +21,7 @@ def generate_wish_card_image(image,sender,receiver):
         draw = ImageDraw.Draw(image)
         position = (120,310) 
         draw.text(position,"Regards, "+sender,font=font,fill=font_color)
-        image.save(f"generated_cards/output_image_{sender.lower()}.png")
+        image.save(f"static/generated_cards/card_{sender.lower()}.png")
         return True
 
     elif (image == "onam_3"):
@@ -32,7 +32,7 @@ def generate_wish_card_image(image,sender,receiver):
         draw = ImageDraw.Draw(image)
         position = (120,390) 
         draw.text(position,"Regards, "+sender,font=font,fill=font_color)
-        image.save(f"generated_cards/output_image_{sender.lower()}.png")
+        image.save(f"static/generated_cards/card_{sender.lower()}.png")
         return True
 
     elif (image == "onam_4"):
@@ -43,7 +43,7 @@ def generate_wish_card_image(image,sender,receiver):
         draw = ImageDraw.Draw(image)
         position = (120,440) 
         draw.text(position,"Regards, "+sender,font=font,fill=font_color)
-        image.save(f"generated_cards/output_image_{sender.lower()}.png")
+        image.save(f"static/generated_cards/card_{sender.lower()}.png")
         return True
 
     
@@ -55,7 +55,7 @@ def generate_wish_card_image(image,sender,receiver):
         draw = ImageDraw.Draw(image)
         position = (120,340) 
         draw.text(position,"Regards, "+sender,font=font,fill=font_color)
-        image.save(f"generated_cards/output_image_{sender.lower()}.png")
+        image.save(f"static/generated_cards/card_{sender.lower()}.png")
         return True
     else:
         return False

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{%block title %}Thanks for using!{% endblock %}
+
+{% block content %}
+<div class="templates">
+
+    <img class="created-image" src="{{ context }}" alt="image" id="image">
+</div>
+
+<!-- <button onclick="downloadImage()" class="download-btn"></button> -->
+<div class="share-box">
+    <p>Here you go, {{ session.pop('sender', None) }} ;)</p>
+<a href="{{ context }}" class="download-btn" download="happy_onam.png">Download</a>
+</div>
+{% endblock %}
