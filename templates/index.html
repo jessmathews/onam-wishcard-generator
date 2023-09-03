@@ -1,24 +1,26 @@
 {% extends 'base.html' %}
 {%block title %}Onam Wish Card Generator{% endblock %}
 
-{% block header %}<h1 class="header">🪷Onam Wish Card Generator🪷</h1>{% endblock %}
-
 {% block content %}
-<form action="generate_card" method="POST">
-    <div class="form-grouping">
-        <p>Select a template:</p>
-        {% include 'cards.html' %}
-    </div>
-    <div class="form-grouping">
-        <p>Recipient Name:</p> 
-        <input placeholder="Recipient" type="text" id="recipient" class="form-properties" required="">       
-    </div>
-    <div class="form-grouping">
-        <p>Sender Name:</p>
-        <input placeholder="Sender" type="text" id="sender" class="form-properties" required="">       
-    </div>
+<div class="form-container">
+    <form action="generate_card" method="POST">
+        <div class="form-grouping">
+            <p>Select a template:</p>
+            {% include 'cards.html' %}
+        </div>
+        <div class="form-grouping">
+            <p>Recipient Name:</p>
+            <input placeholder="Recipient (optional)" type="text" id="recipient" name="recipient"
+                class="form-properties">
+        </div>
+        <div class="form-grouping">
+            <p>Sender Name:</p>
+            <input placeholder="Sender" type="text" id="sender" name="sender" class="form-properties" required="">
+        </div>
 
-    <button type="submit">Generate Card</button>
-</form>
+        <button type="submit">Generate Card</button>
+    </form>
+</div>
+
 
 {% endblock %}

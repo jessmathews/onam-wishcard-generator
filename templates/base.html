@@ -1,16 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Onam wish card Generator">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
     <title>{%block title %}{% endblock %}</title>
 </head>
+
 <body>
-    {% block header %}{% endblock %}
-    <div class="form-container">
-        {% block content %}
-        {% endblock %}
-    </div>
+    <h1 class="header">🪷Onam Wish Card Generator🪷</h1>
+    {% block content %}
+    {% endblock %}
 </body>
+
 </html>
